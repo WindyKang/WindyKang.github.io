@@ -73,11 +73,17 @@
   
 
   
+    
+      
+    
+
+    
+  
 
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -349,17 +355,6 @@
 
           
             
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2018/01/24/hello-world/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::https://windykang.github.io/2018/01/24/hello-world/" class="cy_cmt_count" data-xid="2018/01/24/hello-world/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
           
 
           
@@ -512,17 +507,6 @@ next 一些设置和修改方法设置首页不显示文章全文描述：在nex
 
           
             
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2018/01/24/windstorm/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::https://windykang.github.io/2018/01/24/windstorm/" class="cy_cmt_count" data-xid="2018/01/24/windstorm/" itemprop="commentsCount" ></span>
-                </a>
-              
-            
           
 
           
@@ -606,6 +590,11 @@ More info: Windstorm
 
 
           
+       
+         <div onclick="ShowGitment()" id="gitment-display-button">show comments</div>
+         <div id="gitment-container" style="display:none"></div>
+       
+
 
         </div>
         
@@ -675,6 +664,30 @@ More info: Windstorm
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/WindyKang" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/sui-yi-bu-sui-bian/activities" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-zhihu"></i>
+                  
+                    
+                      知乎
+                    
+                </a>
+              </span>
+            
           
         </div>
 
@@ -760,6 +773,8 @@ More info: Windstorm
   
 
 
+  
+
 
 
 
@@ -787,6 +802,9 @@ More info: Windstorm
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
@@ -839,11 +857,31 @@ More info: Windstorm
 
 
 
-  
-    <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cytqWFFXT"></script>
-  
 
 
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   
+       <script type="text/javascript">
+           function ShowGitment(){
+               document.getElementById("gitment-display-button").style.display = "none";
+               document.getElementById("gitment-container").style.display = "block";
+               var gitment = new Gitment({
+                   id: document.location.href, 
+                   owner: '6018832@qq.com',
+                   repo: 'WindyKang.github.io',
+                   oauth: {
+                       client_id: '913115ca6d4583bcd932',
+                       client_secret: 'b2eb8a607947f9227e770780044cc56ea30e1328',
+                   }});
+               gitment.render('gitment-container');
+           }
+       </script>
+   
 
   
 

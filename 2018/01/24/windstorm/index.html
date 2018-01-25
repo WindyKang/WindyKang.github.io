@@ -73,11 +73,17 @@
   
 
   
+    
+      
+    
+
+    
+  
 
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -353,17 +359,6 @@
 
           
             
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2018/01/24/windstorm/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2018/01/24/windstorm/" itemprop="commentsCount"></span>
-                </a>
-              
-            
           
 
           
@@ -429,7 +424,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="分隔符"><a href="#分隔符" class="headerlink" title="分隔符"></a>分隔符</h3><h2 id="最少三个—或"><a href="#最少三个—或" class="headerlink" title="最少三个—或"></a>最少三个—或</h2><h3 id="email"><a href="#email" class="headerlink" title="email"></a>email</h3><p><a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#54;&#x30;&#49;&#x38;&#56;&#64;&#x71;&#x71;&#46;&#x63;&#x6f;&#x6d;">&#54;&#x30;&#49;&#x38;&#56;&#64;&#x71;&#x71;&#46;&#x63;&#x6f;&#x6d;</a>s</p>
+<h3 id="分隔符"><a href="#分隔符" class="headerlink" title="分隔符"></a>分隔符</h3><h2 id="最少三个—或"><a href="#最少三个—或" class="headerlink" title="最少三个—或"></a>最少三个—或</h2><h3 id="email"><a href="#email" class="headerlink" title="email"></a>email</h3><p><a href="&#109;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#x36;&#x30;&#49;&#56;&#56;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;">&#x36;&#x30;&#49;&#56;&#56;&#64;&#x71;&#113;&#x2e;&#99;&#111;&#109;</a>s</p>
 
       
     </div>
@@ -501,7 +496,7 @@
       <div id="SOHUCS"></div>
     
   </div>
-
+  
 
         </div>
         
@@ -580,6 +575,30 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/WindyKang" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.zhihu.com/people/sui-yi-bu-sui-bian/activities" target="_blank" title="知乎">
+                  
+                    <i class="fa fa-fw fa-zhihu"></i>
+                  
+                    
+                      知乎
+                    
+                </a>
+              </span>
+            
           
         </div>
 
@@ -681,6 +700,8 @@
   
 
 
+  
+
 
 
 
@@ -708,6 +729,9 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
@@ -760,22 +784,31 @@
 
 
 
-  
-    <script type="text/javascript">
-    (function(){
-      var appid = 'cytqWFFXT';
-      var conf = '0b1f728ce1375692d7f9766602370c19';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      if (width < 960) {
-      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
-        window.changyan.api.config({appid:appid,conf:conf})});
-      }
-    })();
-    </script>
-    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
-  
 
 
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   
+       <script type="text/javascript">
+           function ShowGitment(){
+               document.getElementById("gitment-display-button").style.display = "none";
+               document.getElementById("gitment-container").style.display = "block";
+               var gitment = new Gitment({
+                   id: document.location.href, 
+                   owner: '6018832@qq.com',
+                   repo: 'WindyKang.github.io',
+                   oauth: {
+                       client_id: '913115ca6d4583bcd932',
+                       client_secret: 'b2eb8a607947f9227e770780044cc56ea30e1328',
+                   }});
+               gitment.render('gitment-container');
+           }
+       </script>
+   
 
   
 
