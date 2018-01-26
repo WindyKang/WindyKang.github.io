@@ -115,7 +115,8 @@
 <meta property="og:description" content="github Page环境搭建待添加 next 一些设置和修改方法设置首页不显示文章全文描述：在next主题上，默认是在首页显示全部文章和文章的全部内容。但是对于篇幅过长的文章，会造成读者阅读障碍。希望达到在首页只显示文章预览，点击查看详情。 方法：  进入hexo项目的themes/next,打开_config.yml文件，可以用 Notepad++或sublime打开。 找到_config.y">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://WindyKang.github.io/images/example1.png">
-<meta property="og:updated_time" content="2018-01-25T06:27:41.685Z">
+<meta property="og:image" content="https://WindyKang.github.io/images/example2.png">
+<meta property="og:updated_time" content="2018-01-26T02:46:27.176Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="next安装和设置问题">
 <meta name="twitter:description" content="github Page环境搭建待添加 next 一些设置和修改方法设置首页不显示文章全文描述：在next主题上，默认是在首页显示全部文章和文章的全部内容。但是对于篇幅过长的文章，会造成读者阅读障碍。希望达到在首页只显示文章预览，点击查看详情。 方法：  进入hexo项目的themes/next,打开_config.yml文件，可以用 Notepad++或sublime打开。 找到_config.y">
@@ -384,12 +385,13 @@
 <li><p>找到_config.yml文件中的auto_excerpt，如下显示:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">auto_excerpt:</span><br><span class="line">  enable: false</span><br><span class="line">  length: 150</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>将enable设置为TRUE,然后执行</p>
+<li><p>将enable设置为TRUE,然后在Git里执行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>就可以看到预期效果。如下图<br><img src="https://WindyKang.github.io/images/example1.png" alt="example"></p>
-<p>### </p>
+<p>就可以看到预期效果。如下图</p>
+<p><img src="https://WindyKang.github.io/images/example1.png" alt="example1"></p>
+<h3 id="设置favicon"><a href="#设置favicon" class="headerlink" title="设置favicon"></a>设置favicon</h3><p>描述：打开标签页，标签上就会显示title，现在要在title前加上自己的小图标。如下图位置：<br><img src="https://WindyKang.github.io/images/example2.png" alt="example2"></p>
 
       
     </div>
@@ -420,15 +422,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/01/24/windstorm/" rel="next" title="markdown一些写作规范">
+                <i class="fa fa-chevron-left"></i> markdown一些写作规范
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/24/windstorm/" rel="prev" title="markdown一些写作规范">
-                markdown一些写作规范 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -568,7 +570,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#github-Page环境搭建"><span class="nav-number">1.</span> <span class="nav-text">github Page环境搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next-一些设置和修改方法"><span class="nav-number">2.</span> <span class="nav-text">next 一些设置和修改方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置首页不显示文章全文"><span class="nav-number">2.1.</span> <span class="nav-text">设置首页不显示文章全文</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#github-Page环境搭建"><span class="nav-number">1.</span> <span class="nav-text">github Page环境搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#next-一些设置和修改方法"><span class="nav-number">2.</span> <span class="nav-text">next 一些设置和修改方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置首页不显示文章全文"><span class="nav-number">2.1.</span> <span class="nav-text">设置首页不显示文章全文</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置favicon"><span class="nav-number">2.2.</span> <span class="nav-text">设置favicon</span></a></li></ol></li></ol></div>
             
 
           </div>
