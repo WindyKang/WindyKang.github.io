@@ -116,7 +116,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://WindyKang.github.io/images/example1.png">
 <meta property="og:image" content="https://WindyKang.github.io/images/example2.png">
-<meta property="og:updated_time" content="2018-01-26T02:46:27.176Z">
+<meta property="og:updated_time" content="2018-01-26T03:11:20.986Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="next安装和设置问题">
 <meta name="twitter:description" content="github Page环境搭建待添加 next 一些设置和修改方法设置首页不显示文章全文描述：在next主题上，默认是在首页显示全部文章和文章的全部内容。但是对于篇幅过长的文章，会造成读者阅读障碍。希望达到在首页只显示文章预览，点击查看详情。 方法：  进入hexo项目的themes/next,打开_config.yml文件，可以用 Notepad++或sublime打开。 找到_config.y">
@@ -392,6 +392,17 @@
 <p>就可以看到预期效果。如下图</p>
 <p><img src="https://WindyKang.github.io/images/example1.png" alt="example1"></p>
 <h3 id="设置favicon"><a href="#设置favicon" class="headerlink" title="设置favicon"></a>设置favicon</h3><p>描述：打开标签页，标签上就会显示title，现在要在title前加上自己的小图标。如下图位置：<br><img src="https://WindyKang.github.io/images/example2.png" alt="example2"></p>
+<p>方法：</p>
+<ul>
+<li><p>进入hexo项目的themes/next,打开_config.yml文件，找到favicon,可以看到如下设置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Put your favicon.ico into `hexo-site/source/` directory.</span><br><span class="line">favicon: /favicon.ico</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>按照设置，我们只需要选择一张.ico格式的图片，将其命名为<span style="background-color: rgb(200,200,200);"> favicon.ico </span>,再将图片放置到 “blog目录/source/“ 下</p>
+</li>
+<li>然后<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>提交以后可能马上不会显示效果，多刷新几次，效果就会出来的。</p>
 
       
     </div>
