@@ -117,7 +117,7 @@
 <meta property="og:image" content="https://WindyKang.github.io/images/example1.png">
 <meta property="og:image" content="https://WindyKang.github.io/images/example2.png">
 <meta property="og:image" content="https://WindyKang.github.io/images/example3.png">
-<meta property="og:updated_time" content="2018-01-29T01:27:20.818Z">
+<meta property="og:updated_time" content="2018-01-29T03:08:23.152Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="next安装和设置问题">
 <meta name="twitter:description" content="github Page环境搭建待添加 next 一些设置和修改方法设置首页不显示文章全文描述：在next主题上，默认是在首页显示全部文章和文章的全部内容。但是对于篇幅过长的文章，会造成读者阅读障碍。希望达到在首页只显示文章预览，点击查看详情。 方法：  进入hexo项目的themes/next,打开_config.yml文件，可以用 Notepad++或sublime打开。 找到_config.y">
@@ -440,7 +440,20 @@
 </ul>
 <p>提交以后可能马上不会显示效果，多刷新几次，效果就会出来的。</p>
 <h3 id="设置背景动态图"><a href="#设置背景动态图" class="headerlink" title="设置背景动态图"></a>设置背景动态图</h3><p>next主题已经内置了背景动态图，进入hexo项目的themes/next,打开_config.yml文件,查找<span style="background-color: rgb(200,200,200);"> canvas </span>，选择要改的样式，将<span style="background-color: rgb(200,200,200);"> false </span>改为<span style="background-color: rgb(200,200,200);"> true </span>就可以了。例如我的背景就是<span style="background-color: rgb(200,200,200);"> canvas_nest </span>，效果如下图：<br><img src="https://WindyKang.github.io/images/example3.png" alt="exaple3"></p>
-<h3 id="设置评论（gitment）"><a href="#设置评论（gitment）" class="headerlink" title="设置评论（gitment）"></a>设置评论（gitment）</h3>
+<h3 id="设置评论（gitment）"><a href="#设置评论（gitment）" class="headerlink" title="设置评论（gitment）"></a>设置评论（gitment）</h3><p>配置algolia一直搞不定，一直提示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo algolia</span><br><span class="line">ERROR [Algolia] Please set an `HEXO_ALGOLIA_INDEXING_KEY` environment variable to enable content indexing.</span><br><span class="line">ERROR &gt;&gt; Read https://npmjs.com/hexo-algolia#api-key for more informations.</span><br></pre></td></tr></table></figure>
+<p>于是就打算换一个搜索，用<span style="background-color: rgb(200,200,200);"> Local Search </span>来试一试。很简单</p>
+<ul>
+<li><p>安装hexo-generator-searchdb<br>在blog根目录下执行命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在主文件的_config.yml 中，添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在<span style="background-color: rgb(200,200,200);"> next </span>的<span style="background-color: rgb(200,200,200);"> _config.yml </span>中，将<span style="background-color: rgb(200,200,200);"> local_search </span>下的<span style="background-color: rgb(200,200,200);"> enable </span>改为<span style="background-color: rgb(200,200,200);"> true </span>。再执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></li>
+</ul>
+
       
     </div>
     
@@ -470,15 +483,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/01/24/windstorm/" rel="next" title="markdown一些写作规范">
+                <i class="fa fa-chevron-left"></i> markdown一些写作规范
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/24/windstorm/" rel="prev" title="markdown一些写作规范">
-                markdown一些写作规范 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
