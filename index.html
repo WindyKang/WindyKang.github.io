@@ -408,15 +408,17 @@
 
       
         
-          
-            <ul>
+          <ul>
 <li>想学吉他</li>
 <li>想学绘画</li>
-<li>想去骑行</li>
-<li>想要出国旅行</li>
-</ul>
-
-          
+<li>想去骑行
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/01/29/未来一些规划/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -555,56 +557,15 @@
 
       
         
-          
-            <h2 id="github-Page环境搭建"><a href="#github-Page环境搭建" class="headerlink" title="github Page环境搭建"></a>github Page环境搭建</h2><p>待添加</p>
-<h2 id="next-一些设置和修改方法"><a href="#next-一些设置和修改方法" class="headerlink" title="next 一些设置和修改方法"></a>next 一些设置和修改方法</h2><h3 id="设置首页不显示文章全文"><a href="#设置首页不显示文章全文" class="headerlink" title="设置首页不显示文章全文"></a>设置首页不显示文章全文</h3><p>描述：在next主题上，默认是在首页显示全部文章和文章的全部内容。但是对于篇幅过长的文章，会造成读者阅读障碍。希望达到在首页只显示文章预览，点击查看详情。</p>
-<p>方法：</p>
-<ul>
-<li>进入hexo项目的themes/next,打开_config.yml文件，可以用 Notepad++或sublime打开。</li>
-<li><p>找到_config.yml文件中的auto_excerpt，如下显示:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">auto_excerpt:</span><br><span class="line">  enable: false</span><br><span class="line">  length: 150</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将enable设置为TRUE,然后在Git里执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>就可以看到预期效果。如下图</p>
-<p><img src="https://WindyKang.github.io/images/example1.png" alt="example1"></p>
-<h3 id="设置favicon"><a href="#设置favicon" class="headerlink" title="设置favicon"></a>设置favicon</h3><p>描述：打开标签页，标签上就会显示title，现在要在title前加上自己的小图标。如下图位置：</p>
-<p><img src="https://WindyKang.github.io/images/example2.png" alt="example2"></p>
-<p>方法：</p>
-<ul>
-<li><p>进入hexo项目的themes/next,打开_config.yml文件，找到favicon,可以看到如下设置。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Put your favicon.ico into `hexo-site/source/` directory.</span><br><span class="line">favicon: /favicon.ico</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>按照设置，我们只需要选择一张.ico格式的图片，将其命名为<span style="background-color: rgb(200,200,200);"> favicon.ico </span>,再将图片放置到 “blog目录/source/“ 下</p>
-</li>
-<li>然后<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>提交以后可能马上不会显示效果，多刷新几次，效果就会出来的。</p>
-<h3 id="设置背景动态图"><a href="#设置背景动态图" class="headerlink" title="设置背景动态图"></a>设置背景动态图</h3><p>next主题已经内置了背景动态图，进入hexo项目的themes/next,打开_config.yml文件,查找<span style="background-color: rgb(200,200,200);"> canvas </span>，选择要改的样式，将<span style="background-color: rgb(200,200,200);"> false </span>改为<span style="background-color: rgb(200,200,200);"> true </span>就可以了。例如我的背景就是<span style="background-color: rgb(200,200,200);"> canvas_nest </span>，效果如下图：<br><img src="https://WindyKang.github.io/images/example3.png" alt="exaple3"></p>
-<h3 id="设置评论（gitment）"><a href="#设置评论（gitment）" class="headerlink" title="设置评论（gitment）"></a>设置评论（gitment）</h3><p>评论我使用了gitment，这个配置在其他blog已经有很多教案了，在此不做重复。只是提出在配置过程中自己遇到的问题。</p>
-<ul>
-<li>comment按钮显示地方不对</li>
-<li>comment提示Error:Not Found</li>
-</ul>
-<h3 id="设置搜索"><a href="#设置搜索" class="headerlink" title="设置搜索"></a>设置搜索</h3><p>配置algolia一直搞不定，一直提示</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo algolia</span><br><span class="line">ERROR [Algolia] Please set an `HEXO_ALGOLIA_INDEXING_KEY` environment variable to enable content indexing.</span><br><span class="line">ERROR &gt;&gt; Read https://npmjs.com/hexo-algolia#api-key for more informations.</span><br></pre></td></tr></table></figure>
-<p>于是就打算换一个搜索，用<span style="background-color: rgb(200,200,200);"> Local Search </span>来试一试。很简单</p>
-<ul>
-<li><p>安装hexo-generator-searchdb<br>在blog根目录下执行命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在主文件的_config.yml 中，添加</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在 next 的_config.yml 中，将 local_search 下的 enable 改为 true 。再执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
-          
+          <h2 id="github-Page环境搭建"><a href="#github-Page环境搭建" class="headerlink" title="github Page环境搭建"></a>github Page环境搭建</h2><p>待添加</p>
+<h2 id="next-一些设置和修改方法"><a href="#next-一些设置和修改方法" class="headerlink" title="next 一些设置和修改方法"></a>next 一些设置和修改方法</h2>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/01/24/next一些配置问题/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -743,50 +704,14 @@
 
       
         
-          
-            <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题-链接示例"><a href="#三级标题-链接示例" class="headerlink" title="三级标题 链接示例"></a>三级标题 <a href="https://windykang.github.io/">链接示例</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">this is codes,use /```/ surrounded</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://windykang.github.io/2018/01/24/windstorm/">Windstorm</a></p>
-<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在这里写代码</span><br></pre></td></tr></table></figure>
-<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>图片示例：<img src="https://WindyKang.github.io/images/cat.jpg" alt="cat"><br>图床示例：<img src="https://WindyKang.github.io/images/zomble.png" alt="zomble"></p>
-<h3 id="列"><a href="#列" class="headerlink" title="列"></a>列</h3><ul>
-<li>one <ol>
-<li>one-1</li>
-<li>one-2</li>
-</ol>
-</li>
-<li>two<ol>
-<li>two-1</li>
-<li>two-2</li>
-</ol>
-</li>
-<li>three</li>
-</ul>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><p>/:/表示对齐方式</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">a</th>
-<th style="text-align:left">b</th>
-<th style="text-align:right">c</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">居中</td>
-<td style="text-align:left">左对齐</td>
-<td style="text-align:right">右对齐</td>
-</tr>
-<tr>
-<td style="text-align:center">====</td>
-<td style="text-align:left">======</td>
-<td style="text-align:right">======</td>
-</tr>
-</tbody>
-</table>
-<h3 id="分隔符"><a href="#分隔符" class="headerlink" title="分隔符"></a>分隔符</h3><h2 id="最少三个—或"><a href="#最少三个—或" class="headerlink" title="最少三个—或"></a>最少三个—或</h2><h3 id="email"><a href="#email" class="headerlink" title="email"></a>email</h3><p><a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#54;&#48;&#x31;&#56;&#56;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#x6d;">&#54;&#48;&#x31;&#56;&#56;&#64;&#x71;&#x71;&#46;&#99;&#x6f;&#x6d;</a></p>
-<h3 id="hexo建新文章"><a href="#hexo建新文章" class="headerlink" title="hexo建新文章"></a>hexo建新文章</h3><p>hexo new “新闻中title”</p>
-
-          
+          <h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题-链接示例"><a href="#三级标题-链接示例" class="headerlink" title="三级标题 链接示例"></a>三级标题 <a href="https://windykang.github.io/">链接示例</a></h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/01/24/windstorm/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
