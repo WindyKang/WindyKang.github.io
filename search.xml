@@ -3,12 +3,23 @@
   <entry>
     <title><![CDATA[未来一些规划]]></title>
     <url>%2F2018%2F01%2F29%2F%E6%9C%AA%E6%9D%A5%E4%B8%80%E4%BA%9B%E8%A7%84%E5%88%92%2F</url>
-    <content type="text"><![CDATA[学习方面 算法、加密 计算机语言：Java、Python、C++ 区块链技术，以及编程实现 爬虫 nodejs或Python实现 Linux学习 脚本 JavaScript 个人网站 GitHub静态网页 生活方面 想学吉他 想学绘画 想去骑行 想要出国旅行//可以省略后面的文字。]]></content>
+    <content type="text"><![CDATA[学习方面 算法、加密 计算机语言：Java、Python、C++ 区块链技术，以及编程实现 爬虫 nodejs或Python实现 Linux学习 脚本 JavaScript 个人网站 GitHub静态网页 生活方面 想学吉他 想学绘画 想去骑行 想要出国旅行]]></content>
       <categories>
         <category>future</category>
       </categories>
       <tags>
         <tag>future</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[markdown一些写作规范]]></title>
+    <url>%2F2018%2F01%2F24%2Fwindstorm%2F</url>
+    <content type="text"><![CDATA[一级标题二级标题三级标题 链接示例12$ hexo new "My New Post"this is codes,use /```/ surrounded More info: Windstorm 代码块1在这里写代码 图片图片示例：图床示例： 列 one one-1 one-2 two two-1 two-2 three 表格/:/表示对齐方式 a b c 居中 左对齐 右对齐 ==== ====== ====== 分隔符最少三个—或email&#54;&#48;&#49;&#x38;&#x38;&#x40;&#113;&#113;&#x2e;&#x63;&#111;&#x6d; hexo建新文章hexo new “新闻中title”]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>something</tag>
       </tags>
   </entry>
   <entry>
@@ -20,17 +31,6 @@
       </categories>
       <tags>
         <tag>next主题</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[markdown一些写作规范]]></title>
-    <url>%2F2018%2F01%2F24%2Fwindstorm%2F</url>
-    <content type="text"><![CDATA[一级标题二级标题三级标题 链接示例12$ hexo new "My New Post"this is codes,use /```/ surrounded More info: Windstorm 代码块1在这里写代码 图片图片示例：图床示例： 列 one one-1 one-2 two two-1 two-2 three 表格/:/表示对齐方式 a b c 居中 左对齐 右对齐 ==== ====== ====== 分隔符最少三个—或email&#x36;&#48;&#49;&#56;&#x38;&#64;&#x71;&#113;&#46;&#99;&#x6f;&#x6d; hexo建新文章hexo new “新闻中title”]]></content>
-      <categories>
-        <category>markdown</category>
-      </categories>
-      <tags>
-        <tag>something</tag>
       </tags>
   </entry>
 </search>
