@@ -25,7 +25,7 @@
   <entry>
     <title><![CDATA[markdown一些写作规范]]></title>
     <url>%2F2018%2F01%2F24%2Fwindstorm%2F</url>
-    <content type="text"><![CDATA[一级标题二级标题三级标题 链接示例12$ hexo new "My New Post"this is codes,use /```/ surrounded More info: Windstorm 代码块1在这里写代码 图片图片示例：图床示例： 列 one one-1 one-2 two two-1 two-2 three 表格/:/表示对齐方式 a b c 居中 左对齐 右对齐 ==== ====== ====== 分隔符最少三个—或email&#x36;&#x30;&#x31;&#x38;&#56;&#x40;&#113;&#113;&#x2e;&#99;&#111;&#x6d; hexo建新文章hexo new “新闻中title”]]></content>
+    <content type="text"><![CDATA[一级标题二级标题三级标题 链接示例12$ hexo new "My New Post"this is codes,use /```/ surrounded More info: Windstorm 代码块1在这里写代码 图片图片示例：图床示例： 列 one one-1 one-2 two two-1 two-2 three 表格/:/表示对齐方式 a b c 居中 左对齐 右对齐 ==== ====== ====== 分隔符最少三个—或email&#54;&#x30;&#49;&#56;&#56;&#64;&#x71;&#x71;&#46;&#x63;&#111;&#109; hexo建新文章hexo new “新闻中title”]]></content>
       <categories>
         <category>markdown</category>
       </categories>
