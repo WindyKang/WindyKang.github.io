@@ -117,7 +117,7 @@
 <meta property="og:image" content="https://WindyKang.github.io/images/example1.png">
 <meta property="og:image" content="https://WindyKang.github.io/images/example2.png">
 <meta property="og:image" content="https://WindyKang.github.io/images/example3.png">
-<meta property="og:updated_time" content="2018-01-29T07:01:50.811Z">
+<meta property="og:updated_time" content="2018-03-12T06:10:01.791Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="next安装和设置问题">
 <meta name="twitter:description" content="github Page环境搭建待添加 next 一些设置和修改方法设置首页不显示文章全文描述：在next主题上，默认是在首页显示全部文章和文章的全部内容。但是对于篇幅过长的文章，会造成读者阅读障碍。希望达到在首页只显示文章预览，点击查看详情。 方法：  进入hexo项目的themes/next,打开_config.yml文件，可以用 Notepad++或sublime打开。 找到_config.y">
@@ -423,9 +423,11 @@
 <li><p>将enable设置为TRUE,然后在Git里执行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 </li>
+<li><p>还有另一种方式，是<code>markdown</code>语法里面的，也是被提倡的用法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<p>就可以看到预期效果。如下图</p>
-<p><img src="https://WindyKang.github.io/images/example1.png" alt="example1"></p>
+<p>后面的就是被省略的内容，就可以看到预期效果。如下图<br><img src="https://WindyKang.github.io/images/example1.png" alt="example1"></p>
 <h3 id="设置favicon"><a href="#设置favicon" class="headerlink" title="设置favicon"></a>设置favicon</h3><p>描述：打开标签页，标签上就会显示title，现在要在title前加上自己的小图标。如下图位置：</p>
 <p><img src="https://WindyKang.github.io/images/example2.png" alt="example2"></p>
 <p>方法：</p>
@@ -489,14 +491,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/01/24/windstorm/" rel="next" title="markdown一些写作规范">
+                <i class="fa fa-chevron-left"></i> markdown一些写作规范
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/01/24/windstorm/" rel="prev" title="markdown一些写作规范">
-                markdown一些写作规范 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/01/29/未来一些规划/" rel="prev" title="未来一些规划">
+                未来一些规划 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -591,7 +597,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">categories</span>
               </a>
             </div>
