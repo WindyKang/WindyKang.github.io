@@ -106,19 +106,19 @@
 
 
 
-<meta name="description" content="2018-03-12学习以太坊白皮书  Q1  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;问题：A和B交易。首先A给B转100BTC，由矿工添加到区块1000后，形成区块1001.但是B又将此100BTC转给了C，并在1000区块的时候形成分叉（假若B有51%算力），形成1001’区块。且B有能力将1001’区块所在的链变为正常链。那么在这条链上A是否还拥有这100BTC？如果形成分叉币，是">
+<meta name="description" content="2018-03-12学习以太坊白皮书 Q1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;问题：A和B交易。首先A给B转100BTC，由矿工添加到区块1000后，形成区块1001.但是B又将此100BTC转给了C，并在1000区块的时候形成分叉（假若B有51%算力），形成1001’区块。且B有能力将1001’区块所在的链变为正常链。那么在这条链上A是否还拥有这100BTC？如果形成分叉币，是否凭空">
 <meta name="keywords" content="区块链">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Blockchain">
 <meta property="og:url" content="https://windykang.github.io/2018/03/12/Blockchain/index.html">
 <meta property="og:site_name" content="Windykang">
-<meta property="og:description" content="2018-03-12学习以太坊白皮书  Q1  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;问题：A和B交易。首先A给B转100BTC，由矿工添加到区块1000后，形成区块1001.但是B又将此100BTC转给了C，并在1000区块的时候形成分叉（假若B有51%算力），形成1001’区块。且B有能力将1001’区块所在的链变为正常链。那么在这条链上A是否还拥有这100BTC？如果形成分叉币，是">
+<meta property="og:description" content="2018-03-12学习以太坊白皮书 Q1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;问题：A和B交易。首先A给B转100BTC，由矿工添加到区块1000后，形成区块1001.但是B又将此100BTC转给了C，并在1000区块的时候形成分叉（假若B有51%算力），形成1001’区块。且B有能力将1001’区块所在的链变为正常链。那么在这条链上A是否还拥有这100BTC？如果形成分叉币，是否凭空">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://WindyKang.github.io/images/Blockchain.PNG">
-<meta property="og:updated_time" content="2018-03-13T03:49:09.415Z">
+<meta property="og:updated_time" content="2018-03-22T08:38:54.961Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blockchain">
-<meta name="twitter:description" content="2018-03-12学习以太坊白皮书  Q1  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;问题：A和B交易。首先A给B转100BTC，由矿工添加到区块1000后，形成区块1001.但是B又将此100BTC转给了C，并在1000区块的时候形成分叉（假若B有51%算力），形成1001’区块。且B有能力将1001’区块所在的链变为正常链。那么在这条链上A是否还拥有这100BTC？如果形成分叉币，是">
+<meta name="twitter:description" content="2018-03-12学习以太坊白皮书 Q1&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;问题：A和B交易。首先A给B转100BTC，由矿工添加到区块1000后，形成区块1001.但是B又将此100BTC转给了C，并在1000区块的时候形成分叉（假若B有51%算力），形成1001’区块。且B有能力将1001’区块所在的链变为正常链。那么在这条链上A是否还拥有这100BTC？如果形成分叉币，是否凭空">
 <meta name="twitter:image" content="https://WindyKang.github.io/images/Blockchain.PNG">
 
 
@@ -411,21 +411,26 @@
 
       
         <p>2018-03-12学习以太坊白皮书</p>
-<ul>
-<li>Q1</li>
-</ul>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>问题</code>：<br>A和B交易。首先A给B转100BTC，由矿工添加到区块1000后，形成区块1001.但是B又将此100BTC转给了C，并在1000区块的时候形成分叉（假若B有51%算力），形成1001’区块。且B有能力将1001’区块所在的链变为正常链。那么在这条链上A是否还拥有这100BTC？如果形成分叉币，是否凭空多出了100BTC？</p>
+<h3 id="Q1"><a href="#Q1" class="headerlink" title="Q1"></a>Q1</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;<code>问题</code>：<br>A和B交易。首先A给B转100BTC，由矿工添加到区块1000后，形成区块1001.但是B又将此100BTC转给了C，并在1000区块的时候形成分叉（假若B有51%算力），形成1001’区块。且B有能力将1001’区块所在的链变为正常链。那么在这条链上A是否还拥有这100BTC？如果形成分叉币，是否凭空多出了100BTC？</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<code>思考</code>：<br>在B形成的链上，A并没有拥有这100BTC。如果形成分叉币，那么在两条链上的交易都是合法的，都会被矿工记录并存储在区块中，所以确实多出了100BTC。（回答只是个人思考，不具准确性）</p>
+<h3 id="Q2"><a href="#Q2" class="headerlink" title="Q2"></a>Q2</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;<code>问题</code>：<br>区块链的数据结构是怎样的（Bitcoin的）？</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>答案</code>：<br>&nbsp;&nbsp;&nbsp;&nbsp;一个区块包含了该区块生产期间的所有交易，存储的结构是Merkle树。Merkle树是一种Hash二叉树，用作快速归纳和校验大规模数据完整性的数据结构。区块链结构：<img src="https://WindyKang.github.io/images/Blockchain.PNG" alt="Blockchain"></p>
 <ul>
-<li>Q2</li>
+<li>区块头封装了当前版本号、前一区块哈希值、当前区块PoW要求的随机数、时间戳、以及Merkle根信息</li>
+<li>区块体则包括当前区块经过验证的、区块创建过程中生成的所有交易记录。这些记录通过Merkle树的哈希过程生成唯一的Merkle根并记入区块头。</li>
+<li>值得注意的是：区块哈希值实际上并不包含在区块的数据结构里，其实区块打包时只有区块头被用于计算哈希（从网络被接收时由每个节点计算出来），<code>常说的区块哈希值实际是区块头哈希值</code>,它可以用来唯一、明确地标识一个区块。</li>
 </ul>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>问题</code>：<br>区块链的数据结构是怎样的（Bitcoin的）？</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>答案</code>：<br>一个区块包含了该区块生产期间的所有交易，存储的结构是Merkle树。Merkle树是一种Hash二叉树，用作快速归纳和校验大规模数据完整性的数据结构。<br>区块链结构：<img src="https://WindyKang.github.io/images/Blockchain.PNG" alt="Blockchain"><br>区块头封装了当前版本号、前一区块哈希值、当前区块PoW要求的随机数、时间戳、以及Merkle根信息<br>区块体则包括当前区块经过验证的、区块创建过程中生成的所有交易记录。这些记录通过Merkle树的哈希过程生成唯一的Merkle根并记入区块头。<br>值得注意的是：区块哈希值实际上并不包含在区块的数据结构里，其实区块打包时只有区块头被用于计算哈希（从网络被接收时由每个节点计算出来），<code>常说的区块哈希值实际是区块头哈希值</code>,它可以用来唯一、明确地标识一个区块。</p>
-<ul>
-<li>Q3</li>
-</ul>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>问题</code>：<br>Bitcoin的SPV(简化付款验证)是如何工作的？为什么可以将区块链深度作为有效性确认？</p>
+<h3 id="Q3"><a href="#Q3" class="headerlink" title="Q3"></a>Q3</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;<code>问题</code>：<br>Bitcoin的SPV(简化付款验证)是如何工作的?</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<code>思考</code>：</p>
+<ul>
+<li>什么是SPV。SPV（simplified Payment Verification）是一种用户端的代替解决方案，用这种方案可以实现轻量级的钱包客户端，可以不必下载整个区块而只需下载每个区块的区块头就可以实现交易的证明。</li>
+<li>为什么要有SPV。随着Bitcoin区块链高度的增长，其整个区块的数据大约有几百个G（块高度513303），对于普通用户来说，存储这些数据既不必须也没有必要（如果不作为节点的话）。但是用户仍然需要区块的信息来进行支付验证。于是简易支付验证就被设计出来。</li>
+<li>SPV的作用。SPV利用Merkle树的特点，只保存区块头的信息。通过Merkle树根节点向全节点发起请求，全节点再通过Merkle根节点遍历该区块的所有交易，一旦确定了交易的存在，SPV客户端就可以完成交易。</li>
+<li>注意。全节点和SPV客户端是不同的。全节点是存储有区块链所有信息的节点，相当于一个服务器。SPV在进行交易的时候是要在全节点进行验证后才能进行的。全节点数量相对于用户数量来说并不多。</li>
+</ul>
+<h3 id="Q4"><a href="#Q4" class="headerlink" title="Q4"></a>Q4</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;<code>问题</code>：<br>以太坊采用GAS的优缺点，同时在Bitcoin中有什么措施</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<code>思考</code>：</p>
+<h3 id="Q5"><a href="#Q5" class="headerlink" title="Q5"></a>Q5</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;<code>问题</code>：<br>区块链的hash与区块链头中的Merkle数根节点是否有关。如果有关，那么挖矿是在收到所有交易之后才进行的吗？否则交易的变更会导致Merkle根节点的hash变化，从而导致区块链hash不符合要求而废弃。</p>
 
       
     </div>
@@ -522,8 +527,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -603,6 +617,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Q1"><span class="nav-number">1.</span> <span class="nav-text">Q1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q2"><span class="nav-number">2.</span> <span class="nav-text">Q2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q3"><span class="nav-number">3.</span> <span class="nav-text">Q3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q4"><span class="nav-number">4.</span> <span class="nav-text">Q4</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Q5"><span class="nav-number">5.</span> <span class="nav-text">Q5</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
